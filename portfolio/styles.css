@@ -475,3 +475,18 @@ footer {
 .contact-right button:hover {
     background-color: #0ea5e9;
 }
+
+/* ============================= */
+/* PROJECTS HORIZONTAL FIX */
+/* ============================= */
+
+.projects-container {
+    display: flex !important;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.project-card {
+    width: 300px;
+}
