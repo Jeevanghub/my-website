@@ -509,3 +509,16 @@ footer {
 .project-card:hover {
     transform: translateY(-10px);
 }
+
+/* ========================= */
+/* FORCE PROJECTS HORIZONTAL */
+/* ========================= */
+
+.projects-container {
+    display: flex !important;
+    flex-direction: row !important;   /* 🔥 THIS IS THE KEY */
+    justify-content: center !important;
+    align-items: stretch !important;
+    gap: 40px;
+    flex-wrap: wrap;
+}
