@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JEEVAN HTML</title>
+
+    <style>
+        body {
+            background-color: #121212;
+            color: white;
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        /* Moving Text Animation */
+        .moving-text {
+            position: relative;
+            white-space: nowrap;
+            font-weight: bold;
+            color: cyan;
+            margin-bottom: 20px;
+            animation: moveText 8s linear infinite;
+        }
+
+        @keyframes moveText {
+            from { left: -100%; }
+            to { left: 100%; }
+        }
+
+        h1 {
+            color: orange;
+            font-family: Georgia, serif;
+            transition: 0.3s;
+        }
+
+        h1:hover {
+            color: yellow;
+            transform: scale(1.05);
+        }
+
+        h2 {
+            color: lightgreen;
+            border-bottom: 1px solid gray;
+            padding-bottom: 5px;
+        }
+
+        .blue-text {
+            color: skyblue;
+        }
+
+        .blue-text:hover {
+            color: cyan;
+        }
+
+        .pink-text {
+            color: pink;
+        }
+
+        .pink-text:hover {
+            color: hotpink;
+        }
+
+        .custom-font {
+            font-family: "Courier New", monospace;
+            color: yellow;
+        }
+
+        /* List Hover Effect */
+        ul li {
+            transition: 0.3s;
+        }
+
+        ul li:hover {
+            background-color: #333;
+            padding-left: 10px;
+        }
+
+        /* Table Styling */
+        table, th, td {
+            border: 1px solid gray;
+            border-collapse: collapse;
+            padding: 6px;
+        }
+
+        table {
+            width: 100%;
+            margin-top: 10px;
+        }
+
+        table tr:nth-child(even) {
+            background-color: #1e1e1e;
+        }
+
+        /* Form Styling */
+        input, textarea {
+            margin: 5px 0;
+            padding: 5px;
+        }
+
+        input:focus, textarea:focus {
+            outline: none;
+            border: 2px solid orange;
+            background-color: #222;
+            color: white;
+        }
+
+        input[type="submit"] {
+            background-color: orange;
+            border: none;
+            padding: 8px 15px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        input[type="submit"]:hover {
+            background-color: yellow;
+            transform: scale(1.1);
+        }
+
+        input[type="submit"]:active {
+            background-color: red;
+            transform: scale(0.95);
+        }
+
+        footer {
+            margin-top: 30px;
+            color: gray;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>FULL STACK DEVELOPMENT</h1>
+
+    <!-- Moving Text -->
+    <div class="moving-text">
+        Hi I'm Jeevan 
+    </div>
+
+    <h2>Text Formatting</h2>
+
+    <p>This is <strong class="blue-text">strong blue text</strong>.</p>
+
+    <p style="color: green; text-align: center; font-weight: bold;">
+  Jeevan Full Stack Development
+    </p>
+
+    <p>This is <em class="pink-text">emphasized pink text</em>.</p>
+
+    <p class="custom-font">This line uses Courier New font style.</p>
+
+    <p>This is <mark>highlighted text</mark>.</p>
+
+    <p>Water formula: H<sub>2</sub>O</p>
+
+    <p>Math power: X<sup>2</sup></p>
+
+    <blockquote style="color: lightgray;">
+        "Learning HTML and CSS is interesting!"
+    </blockquote>
+
+    <h2>Lists</h2>
+
+    <ul>
+        <li style="color: cyan;">HTML</li>
+        <li style="color: orange;">CSS</li>
+        <li style="color: violet;">JavaScript</li>
+    </ul>
+
+    <ol>
+        <li>First Step</li>
+        <li>Second Step</li>
+        <li>Third Step</li>
+    </ol>
+
+    <h2>Simple Table</h2>
+
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Course</th>
+        </tr>
+        <tr>
+            <td>JEEVAN</td>
+            <td>CSE</td>
+        </tr>
+        <tr>
+            <td>RAJU</td>
+            <td>ISE</td>
+        </tr>
+    </table>
+
+    <h2>Contact Form</h2>
+
+    <form>
+        Name:<br>
+        <input type="text"><br>
+
+        Email:<br>
+        <input type="email"><br>
+
+        Message:<br>
+        <textarea rows="3" cols="30"></textarea><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+
+    <footer>
+        © 2026 FULL STACK DEVELOPMENT
+    </footer>
+
+</body>
+</html>
