@@ -477,16 +477,35 @@ footer {
 }
 
 /* ============================= */
-/* PROJECTS HORIZONTAL FIX */
+/* PROJECTS SECTION */
 /* ============================= */
 
+.projects {
+    padding: 100px 10%;
+    text-align: center;
+}
+
+.projects h2 {
+    font-size: 32px;
+    margin-bottom: 50px;
+}
+
 .projects-container {
-    display: flex !important;
+    display: flex;
     justify-content: center;
-    gap: 30px;
+    gap: 40px;
     flex-wrap: wrap;
 }
 
 .project-card {
-    width: 300px;
+    background: #ffffff;
+    padding: 25px;
+    width: 320px;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    transition: 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
 }
